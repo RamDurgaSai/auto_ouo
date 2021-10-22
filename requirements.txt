@@ -1,0 +1,7 @@
+pyautogui
+nordvpn_switcher
+selenium
+Pillow
+requests
+opencv-python
+pid
