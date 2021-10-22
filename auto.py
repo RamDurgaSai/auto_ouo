@@ -164,8 +164,15 @@ def main(config_file = None, retries = 5):
         main(config_file, retries)
 
 def rearrangetunnels():
-    for index,tunnel in enumerate(listdir(jion_paths(getcwd(),"confs"))):
-        rename(jion_paths(getcwd(),"confs",tunnel),jion_paths(getcwd(),"confs",tunnel.replace(")","")))
+    pass
+    # for index,tunnel in enumerate(listdir(jion_paths(getcwd(),"confs"))):
+    #     tunnel = jion_paths(getcwd(),"confs",tunnel)
+    #     with open(tunnel,"r+") as tunnel:
+    #         lines = [line for line in tunnel.read().splitlines()]
+    #         for line in lines:
+    #             if "Allo"
+
+    #rename(jion_paths(getcwd(),"confs",tunnel),jion_paths(getcwd(),"confs",tunnel.replace(")","")))
             
 
     
