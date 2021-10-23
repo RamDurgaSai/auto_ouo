@@ -46,7 +46,7 @@ class Auto:
                 self.wait_for_element(self.ButtonMain)
                 button = self.browser.find_element_by_xpath(self.ButtonMain)
                 self.set_center_of_screen(button)
-                if self.click_image() == "images\getLinkButtonNew.PNG" : break
+                if "getLinkButton" in self.click_image(): break
                 current_window = self.browser.current_window_handle
                 windows = self.browser.window_handles
                 for window in windows:
@@ -67,13 +67,14 @@ class Auto:
             if current_window != child_window : self.browser.switch_to.window(child_window)
 
     def click_image(self,timeout=60) -> str:
-        images = ["images\getLinkButtonNew.PNG","images\IamHumanButtonNew.PNG"]
+        images = ["images\getLinkButtonNew.PNG","images\IamHumanButtonNew.PNG","images/IamHumanButton.PNG","images/IamHumanButton.PNG"]
         starting_time = present_time()
         while True:
             sleep(1)
             image = choice(images)
             self.log.debug(f"waiting for images  since {int(present_time()-starting_time)}s")
             location = locateOnScreen(image,grayscale = True,confidence = 0.5)
+            
             if location: break
 
             if int(present_time() - starting_time) > timeout:
