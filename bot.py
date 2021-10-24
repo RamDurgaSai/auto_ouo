@@ -36,4 +36,6 @@ if __name__ == "__main__":
     bot = Bot(configurations["api_id"],
               configurations["api_hash"],
               configurations["bot_token"])
-    with PidFile(pidname="bot",piddir= join_paths(getcwd(),"pids")) as pid_file : bot.run()
+    with PidFile(pidname="bot",piddir= join_paths(getcwd(),"pids")) as pid_file : 
+        while True:pass # bot.run()
+        # Bot is deprecated in upcoming versions 

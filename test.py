@@ -39,7 +39,7 @@
 
 
 
-from win32com.shell.shell import ShellExecuteEx
+# from win32com.shell.shell import ShellExecuteEx
 # import sys
 # command = 'wireguard /installtunnelservice "C:\Program Files\Wireguard\Data\Configurations\config.conf.dpapi"'
 # ShellExecuteEx(lpVerb='runas', lpFile=sys.executable, lpParameters=command)
@@ -60,3 +60,30 @@ from win32com.shell.shell import ShellExecuteEx
 # ShellExecuteEx(lpVerb='runas', lpFile=sys.executable, lpParameters=command)
 # # Code of your program here
 
+from time import sleep
+from selenium.webdriver import Firefox, FirefoxOptions
+from webbrowser import get, open as open_in_browser
+from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.webdriver import WebDriver
+from selenium.webdriver.remote.webelement import WebElement
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+from os import getcwd
+from os.path import join
+print(getcwd())
+browser = Firefox(executable_path=join(getcwd(),"auto_ouo","tools\geckodriver.exe"))
+browser.maximize_window()
+browser.get("http://ouo.io/qs/PxldEKyr?s=yourdestinationlink.com")
+sleep(10)
+
+while True:
+    try:
+        sleep(3)
+        button = browser.find_element_by_xpath( '//*[@id="btn-main"]')
+        print(button.text)
+        browser.execute_script("arguments[0].click();", button)
+        if button.text == "GET LINK":
+            browser.execute_script("arguments[0].click();", button)
+            print("Successfully completed task ")
+            sleep(4546556)
+    except:pass

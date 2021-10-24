@@ -2720,3 +2720,153 @@ console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkErr
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1634992626528	geckodriver	INFO	Listening on 127.0.0.1:49329
+1634992629625	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49330" "-no-remote" "-profile" "C:\\Users\\Varma\\AppData\\Local\\Temp\\rust_mozprofilezLwyGN"
+1634992630378	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Varma\\AppData\\Local\\Temp\\rust_mozprofilezLwyGN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49330/devtools/browser/e7e9edd0-7f1e-46ae-88df-5bd6129c68e9
+1634992634646	Marionette	INFO	Listening on port 49336
+1634992634942	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1634992636852	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: uncaught exception: Image (https://ad.doubleclick.net/favicon.ico?ad=300x250&ad_box_=1&adnet=1&showad=1&size=250x250) wait timeout: did not return within 800ms
+1634992676063	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1634992711887	Marionette	INFO	Stopped listening on port 49336
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1634992723722	geckodriver	INFO	Listening on 127.0.0.1:63197
+1634992726825	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63198" "-no-remote" "-profile" "C:\\Users\\Varma\\AppData\\Local\\Temp\\rust_mozprofileARF68S"
+1634992727478	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Varma\\AppData\\Local\\Temp\\rust_mozprofileARF68S\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63198/devtools/browser/76aac032-875f-4e55-b8c7-2398577d1caa
+1634992731742	Marionette	INFO	Listening on port 63206
+1634992732183	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1634992734854	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://c.adsco.re/, line 43: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://c.adsco.re/, line 63: TypeError: f[m] is undefined
+JavaScript error: https://c.adsco.re/, line 63: TypeError: f[m] is undefined
+JavaScript warning: https://script.anura.io/request.js?instance=890857896&source=57249277&callback=AdskeeperInfC911115AnuraCallback&1634992750970, line 62: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://script.anura.io/request.js?instance=890857896&source=57249277&callback=AdskeeperInfC911115AnuraCallback&1634992750970, line 69: WebGL context was lost.
+JavaScript warning: https://c.adsco.re/, line 43: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1634992778208	Marionette	INFO	Stopped listening on port 63206
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1635085480307	geckodriver	INFO	Listening on 127.0.0.1:62311
+1635085483391	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62312" "-no-remote" "-profile" "C:\\Users\\Varma\\AppData\\Local\\Temp\\rust_mozprofile12UGZX"
+1635085484183	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Varma\\AppData\\Local\\Temp\\rust_mozprofile12UGZX\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62312/devtools/browser/af646a53-cf02-45e8-8ed5-c575c575d670
+1635085488686	Marionette	INFO	Listening on port 62321
+1635085489244	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635085492399	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://c.adsco.re/, line 43: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://c.adsco.re/, line 63: TypeError: f[m] is undefined
+JavaScript error: https://c.adsco.re/, line 63: TypeError: f[m] is undefined
+JavaScript warning: https://c.adsco.re/, line 43: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1635085530418	Marionette	INFO	Stopped listening on port 62321
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39007A,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1635085574488	geckodriver	INFO	Listening on 127.0.0.1:52094
+1635085577553	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52095" "-no-remote" "-profile" "C:\\Users\\Varma\\AppData\\Local\\Temp\\rust_mozprofile5TTKSJ"
+1635085578274	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Varma\\AppData\\Local\\Temp\\rust_mozprofile5TTKSJ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52095/devtools/browser/7055a928-6cda-4d4f-a028-f4b4381fef6d
+1635085582724	Marionette	INFO	Listening on port 52106
+1635085582887	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635085586387	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: uncaught exception: Image (https://ad.doubleclick.net/favicon.ico?ad=300x250&ad_box_=1&adnet=1&showad=1&size=250x250) wait timeout: did not return within 800ms
+1635085627831	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://c.adsco.re/, line 43: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://c.adsco.re/, line 63: TypeError: f[m] is undefined
+JavaScript error: https://c.adsco.re/, line 63: TypeError: f[m] is undefined
+1635085634002	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1635085637060	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1635085651262	Marionette	INFO	Stopped listening on port 52106
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+[Parent 5740, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1635085670855	geckodriver	INFO	Listening on 127.0.0.1:52756
+1635085673956	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52757" "-no-remote" "-profile" "C:\\Users\\Varma\\AppData\\Local\\Temp\\rust_mozprofileQjtNDn"
+1635085674611	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Varma\\AppData\\Local\\Temp\\rust_mozprofileQjtNDn\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52757/devtools/browser/4de95fe1-5fdb-4fd7-9e0e-571b50c9758e
+1635085678717	Marionette	INFO	Listening on port 52764
+1635085678777	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635085682150	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://c.adsco.re/, line 43: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://c.adsco.re/, line 63: TypeError: f[m] is undefined
+JavaScript error: https://c.adsco.re/, line 63: TypeError: f[m] is undefined
+JavaScript warning: https://c.adsco.re/, line 43: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1635086013228	Marionette	INFO	Stopped listening on port 52764
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 14192, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+pData\\Local\\Temp\\rust_mozprofileWY9jjl\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58079/devtools/browser/12a0d371-4157-4383-977a-58612ebfadd4
+1635085999120	Marionette	INFO	Listening on port 58091
+1635085999420	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635086002117	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://c.adsco.re/, line 43: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://c.adsco.re/, line 63: TypeError: f[m] is undefined
+JavaScript error: https://c.adsco.re/, line 63: TypeError: f[m] is undefined
+JavaScript warning: https://c.adsco.re/, line 43: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1635086042292	Marionette	INFO	Stopped listening on port 58091
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1635086059837	geckodriver	INFO	Listening on 127.0.0.1:58708
+1635086062938	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58709" "-no-remote" "-profile" "C:\\Users\\Varma\\AppData\\Local\\Temp\\rust_mozprofilePX1uuS"
+1635086063630	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Varma\\AppData\\Local\\Temp\\rust_mozprofilePX1uuS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58709/devtools/browser/07b7df45-4d68-4ccb-b790-525ceb26891c
+1635086067638	Marionette	INFO	Listening on port 58733
+1635086067791	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635086069860	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://c.adsco.re/, line 43: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://c.adsco.re/, line 63: TypeError: f[m] is undefined
+JavaScript error: https://c.adsco.re/, line 63: TypeError: f[m] is undefined
+JavaScript warning: https://c.adsco.re/, line 43: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1635086095049	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1635086104131	Marionette	INFO	Stopped listening on port 58733
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

@@ -2390,3 +2390,66 @@ country : Russia(RU)
 [18:1:44][DEBUG] waiting for images  since 3s
 [18:1:45][DEBUG] waiting for images  since 4s
 [18:1:51][DEBUG] waiting for images  since 1s
+[18:6:59][DEBUG] Launching Auto....
+[18:6:59][DEBUG] Launching bot...
+[18:7:2][DEBUG] Trying to Change Ip --- with config config17.conf
+[18:7:6][DEBUG] Ip Changed Successfully ... 
+[18:7:6][DEBUG] 
+ip : 212.193.14.58
+city : None
+state : None
+country : Russia(RU)
+[18:7:6][DEBUG] Doing work for https://www.pdisk.me/share-video?videoid=nv2nll004hzv at retires 1
+[18:7:53][DEBUG] waiting for images  since 1s
+[18:8:37][DEBUG] Launching Auto....
+[18:8:37][DEBUG] Launching bot...
+[18:8:38][DEBUG] Trying to Change Ip --- with config config11.conf
+[18:8:43][DEBUG] Ip Changed Successfully ... 
+[18:8:43][DEBUG] 
+ip : 193.233.221.122
+city : None
+state : None
+country : Russia(RU)
+[18:8:43][DEBUG] Doing work for https://www.pdisk.me/share-video?videoid=nv2nlp000e78 at retires 1
+[18:9:10][DEBUG] waiting for images  since 1s
+[18:9:17][DEBUG] waiting for images  since 1s
+[18:9:18][DEBUG] waiting for images  since 2s
+[18:9:19][DEBUG] waiting for images  since 3s
+[18:9:27][DEBUG] waiting for images  since 1s
+[19:54:30][DEBUG] Launching Auto....
+[19:54:30][DEBUG] Launching bot...
+[19:54:35][DEBUG] Trying to Change Ip --- with config config14.conf
+[19:54:40][DEBUG] Ip Changed Successfully ... 
+[19:54:40][DEBUG] 
+ip : 193.233.131.188
+city : Vladivostok
+state : Primorskiy (Maritime) Kray
+country : Russia(RU)
+[19:54:40][DEBUG] Doing work for https://www.pdisk.me/share-video?videoid=nv2nlp000rpf at retires 1
+[19:55:20][DEBUG] Successfully clicked the get link button
+[19:56:6][DEBUG] Launching Auto....
+[19:56:6][DEBUG] Launching bot...
+[19:56:9][DEBUG] Trying to Change Ip --- with config config11.conf
+[19:56:14][DEBUG] Ip Changed Successfully ... 
+[19:56:14][DEBUG] 
+ip : 193.233.128.122
+city : Vladivostok
+state : Primorskiy (Maritime) Kray
+country : Russia(RU)
+[19:56:14][DEBUG] Doing work for https://www.pdisk.me/share-video?videoid=nv2nlt000v0s at retires 1
+[19:57:16][DEBUG] Successfully clicked the get link button
+[19:57:50][DEBUG] Doing work for https://www.pdisk.me/share-video?videoid=nv2nlt000fjq at retires 2
+[19:58:29][DEBUG] Successfully clicked the get link button
+[20:3:5][DEBUG] Launching Auto....
+[20:3:5][DEBUG] Launching bot...
+[20:3:6][DEBUG] Trying to Change Ip --- with config config13.conf
+[20:3:10][DEBUG] Ip Changed Successfully ... 
+[20:3:10][DEBUG] 
+ip : 212.193.14.57
+city : None
+state : None
+country : Russia(RU)
+[20:3:10][DEBUG] Doing work for https://www.pdisk.me/share-video?videoid=nv2nll004ktt at retires 1
+[20:3:47][DEBUG] Successfully clicked the get link button
+[20:4:19][DEBUG] Doing work for https://www.pdisk.me/share-video?videoid=nv2nlh000n6m at retires 2
+[20:4:53][DEBUG] Successfully clicked the get link button

@@ -2,3 +2,6 @@
 *.txt
 *.pyc
 *.log
+geckodriver.log
+log.txt
+ouo_bot.session

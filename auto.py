@@ -6,8 +6,6 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from time import sleep,time as present_time
-from pyautogui import locateOnScreen,click as click_on_screen
-# from nordvpn_switcher import initialize_VPN, rotate_VPN, terminate_VPN
 from subprocess import Popen
 from random import choice
 from os.path import join as jion_paths, isfile, basename
@@ -46,7 +44,13 @@ class Auto:
                 self.wait_for_element(self.ButtonMain)
                 button = self.browser.find_element_by_xpath(self.ButtonMain)
                 self.set_center_of_screen(button)
-                if "getLinkButton" in self.click_image(): break
+                if button.text == "GET LINK":
+                    sleep(5)
+                    self.browser.execute_script("arguments[0].click();", button)
+                    self.log.debug("Successfully clicked the get link button")
+                    break
+                self.browser.execute_script("arguments[0].click();", button)
+        
                 current_window = self.browser.current_window_handle
                 windows = self.browser.window_handles
                 for window in windows:
@@ -57,7 +61,7 @@ class Auto:
             except IpNotWorking as ip_not_working:
                 raise ip_not_working
             except:self.run()
-        sleep(10)
+        sleep(15)
         self.browser.quit()
 
     def set_tab(self):
@@ -66,64 +70,22 @@ class Auto:
         for child_window in child_windows: 
             if current_window != child_window : self.browser.switch_to.window(child_window)
 
-    def click_image(self,timeout=60) -> str:
-        images = ["images\getLinkButtonNew.PNG","images\IamHumanButtonNew.PNG","images/IamHumanButton.PNG","images/IamHumanButton.PNG"]
-        starting_time = present_time()
-        while True:
-            sleep(1)
-            image = choice(images)
-            self.log.debug(f"waiting for images  since {int(present_time()-starting_time)}s")
-            location = locateOnScreen(image,grayscale = True,confidence = 0.5)
-            
-            if location: break
-
-            if int(present_time() - starting_time) > timeout:
-                raise TimeoutError(f"Timeout Exceed for image {image}")
-
-
-        left, top, width, height = location
-        if image == images[0]:sleep(3)
-        click_on_screen(x = left+width//2, y = top + height//2)
-        return image
-
 
     def wait_for_element(self,xpath:str,timeout=60):
             element = WebDriverWait(self.browser, timeout).until(
                         EC.presence_of_element_located((By.XPATH, xpath)))
 
-
-
     def set_center_of_screen(self, element:WebElement) -> None:
         self.browser.execute_script('arguments[0].scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"})',element)
+        
     def close(self):
         if self.browser : self.browser.quit()
+
 def get_ip_details():
     responce = get("https://geolocation-db.com/json/")
     return  load_json_data(responce.content.decode('utf-8'))
 
 
-def main_nord(vpn=True,retries = 5):
-    try: 
-        while True:
-            with open("links.txt","r") as file:
-                links = file.read().splitlines()
-            if vpn:
-                if retries > 3:
-                    retries = 1
-                    rotate_VPN()
-                else:retries += 1
-
-                
-            link = choice(links)
-            print(f"Doing work for {link}")
-            auto = Auto(link)
-            auto.run()
-            sleep(5)
-    except Exception as e:
-        print(f"Wtf happen ...\n{str(e)}")
-        sleep(120)
-        main(vpn,retries)
-        
 def main(config_file = None, retries = 5):
     log = Log("log.txt")
     config_path = "C:\\Program Files\\Wireguard\\Data\\Configurations"
@@ -164,37 +126,17 @@ def main(config_file = None, retries = 5):
         print(f"Due to following Error Trying meee... \n{str(e)}")
         main(config_file, retries)
 
-def rearrangetunnels():
-    pass
-    # for index,tunnel in enumerate(listdir(jion_paths(getcwd(),"confs"))):
-    #     tunnel = jion_paths(getcwd(),"confs",tunnel)
-    #     with open(tunnel,"r+") as tunnel:
-    #         lines = [line for line in tunnel.read().splitlines()]
-    #         for line in lines:
-    #             if "Allo"
-
-    #rename(jion_paths(getcwd(),"confs",tunnel),jion_paths(getcwd(),"confs",tunnel.replace(")","")))
             
 
     
 if __name__ == "__main__":
-    # with open("config.secret","r") as config_file:
-    #     configurations = load_json_data(config_file.read())
-    # vpn = configurations["vpn"]
-    # if vpn :
-    #     initialize_VPN(save=1,area_input=["United States","Australia"])
-    #     main_nord(vpn)
-    # rearrangetunnels()
-    
-    # main()
+ 
     with PidFile(pidname= "auto",piddir = jion_paths(getcwd(),"pids")) as pid_file:
         with open("data/last_used_config.txt","r") as file: config_file = file.read()
         config_file = basename(config_file).split(".")[0]
         system(f'wireguard /uninstalltunnelservice "{config_file}"')
 
 
-        main()
-        # print("auto started")
-        # sleep(5)
-        # print("auto ended")
+        main() # To do Work
+        
         
