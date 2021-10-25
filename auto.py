@@ -15,6 +15,7 @@ from pid import PidFile
 from Log import Log
 from requests import get
 from socket import gethostname, gethostbyname
+from sys import stdout
 
 class IpNotWorking(Exception):pass
 
@@ -94,13 +95,16 @@ def main(config_file = None, retries = 5):
         while True:
             with open("data\links.txt","r") as file:
                 links = file.read().splitlines()
-            if retries > 3:
+            if retries >= 3:
                 if config_file : 
                     config_file = basename(config_file).split(".")[0]
-                    system(f'wireguard /uninstalltunnelservice "{config_file}"')
+                    # system(f'wireguard /uninstalltunnelservice "{config_file}"')
+                    Popen(("wireguard", "/uninstalltunnelservice", config_file), shell=True, stdout=stdout)
                 config_file = choice([jion_paths(config_path,config_file) for config_file in listdir(config_path)])
                 log.debug(f"Trying to Change Ip --- with config {basename(config_file)}")
-                system(f'wireguard /installtunnelservice "{config_file}"')
+                sleep(2)
+                # system(f'wireguard /installtunnelservice "{config_file}"')
+                Popen(("wireguard","/installtunnelservice",config_file), shell=True, stdout=stdout)
                 #save config_file in somewhere
                 with open("data\last_used_config.txt","w") as file: file.write(str(config_file))
                 sleep(2)
@@ -118,7 +122,7 @@ def main(config_file = None, retries = 5):
             except IpNotWorking as ip_not_working:
                 log.error("Ip not Working ...")
                 retries = 5
-            #sleep(5)
+            sleep(5)
             auto.close()
             auto = None
     except Exception as e:
